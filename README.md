@@ -119,6 +119,7 @@ return requestResponse.hasResponse() && requestResponse.response().hasHeader("Se
 
 ## Referer
 Extracts Referer request header. Useful to identify sensitive data leakage via Referer header like OIDC authorization codes.
+```
 /**
  * Extracts Referer request header.
  *
@@ -129,6 +130,7 @@ Extracts Referer request header. Useful to identify sensitive data leakage via R
  **/
 
 return requestResponse.request().hasHeader("Referer") ? requestResponse.request().headerValue("Referer") : "";
+```
 
 
 ## Slow
